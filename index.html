@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <title>Business Expense Management</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="style.css" rel="stylesheet">
+  <script src="script.js"></script>
+</head>
+
+<body>
+  <header>
+    <h1>Business Expense Management</h1>
+  </header>
+
+  <div class="container">
+    <form>
+
+      <h3>ÁREA DE CADASTRO DA EMPRESA</h3>
+      <div class="row">
+        <div class="col">
+          <label>Nome:</label>
+          <input type="text" class="form-control" id="nome">
+        </div>
+
+        <div class="col">
+          <label>Email:</label>
+          <input type="email" class="form-control" id="email">
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col">
+          <label>Estado:</label>
+          <select class="form-select" id="estado">
+            <option disabled>Selecione o seu estado</option>
+            <option>Acre (AC)</option>
+            <option>Alagoas (AL)</option>
+            <option>Amapá (AP)</option>
+            <option>Amazonas (AM)</option>
+            <option>Bahia (BA)</option>
+            <option>Ceará (CE)</option>
+            <option>Espírito Santo (ES)</option>
+            <option>Goiás (GO)</option>
+            <option>Maranhão (MA)</option>
+            <option>Mato Grosso (MT)</option>
+            <option>Mato Grosso do Sul (MS)</option>
+            <option>Minas Gerais (MG)</option>
+            <option>Pará (PA)</option>
+            <option>Paraíba (PB)</option>
+            <option>Paraná (PR)</option>
+            <option>Pernambuco (PE)</option>
+            <option>Piauí (PI)</option>
+            <option>Rio de Janeiro - RJ</option>
+            <option>Rio Grande do Norte (RN)</option>
+            <option>Rio Grande do Sul (RS)</option>
+            <option>Rondônia (RO)</option>
+            <option>Roraima (RR)</option>
+            <option>Santa Catarina (SC)</option>
+            <option>São Paulo (SP)</option>
+            <option>Sergipe (SE)</option>
+            <option>Tocantins (TO)</option>
+          </select>
+        </div>
+
+        <div class="col">
+          <label>Telefone:</label>
+          <input type="tel" maxlength="13" placeholder="DDD + número de celular" class="form-control" id="telefone">
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col">
+          <label>Ramo:</label>
+          <select class="form-select" id="ramo">
+            <option disabled>Selecione o ramo de atividade</option>
+            <option>Indústria (Fabricação)</option>
+            <option>Comercial (Vendas)</option>
+            <option>Serviços (Prestação de serviços)</option>
+          </select>
+        </div>
+
+        <div class="col">
+          <label>Segmento:</label>
+          <input type="text" class="form-control" id="segmento" placeholder="Ex: Mercado, Loja de roupas, Escola...">
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col">
+          <label>Faturamento Anual:</label>
+          <select class="form-select" id="faturamento">
+            <option disabled>Selecione o faturamento anual</option>
+            <option>Até 30 mil</option>
+            <option>31 a 50 mil</option>
+            <option>51 a 300 mil</option>
+            <option>301 a 1 milhão</option>
+            <option>Mais de 1 milhão</option>
+          </select>
+        </div>
+      </div>
+
+      <button type="button" class="btn btn-primary" onclick="cadastrar()">Cadastrar</button>
+
+    </form>
+
+  </div>
+</body>
+
+</html>
